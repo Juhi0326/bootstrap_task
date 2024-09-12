@@ -1,0 +1,309 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="custom-bootstrap.css" rel="stylesheet">
+    <link href="./custom-bootstrap.css.map" rel="stylesheet">
+    <link rel="stylesheet" href="./breadcrumbs.css">
+    <title>Bootstrap demo</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="text-bg-secondary">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-md-auto">
+                hotline: 0800 123 45 67
+                <i class="bi bi-info-circle ms-3"></i>
+            </div>
+            <div class="col col-lg-2">
+            </div>
+        </div>
+    </header>
+    <div class="border-bottom border-2 vh-25">
+        <div class="d-flex ms-5 pt-2">
+            <h1 class="display-2 ms-5">
+                <i class="bi bi-browser-edge text-danger ms-5"></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="container mb-3 mt-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-custom overflow-hidden text-center bg-body-tertiary border rounded-3">
+                <li class="breadcrumb-item">
+                  <a class="link-body-emphasis text-decoration-none" href="#">
+                    1. Verfügbarkeitscheck
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a class="link-body-emphasis text-decoration-none" href="#">2. Produktoptionen</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis text-decoration-none" href="#">3. Persönliche Angaben</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="link-body-emphasis text-decoration-none" href="#">4. Angaben prüfen</a>
+                  </li>
+              </ol>
+            </nav>
+        <div class="row">
+            <div class="col-7">
+                <h1 class="text-danger mt-4 mb-3">Persönliche Angaben</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-9 mb-1">
+                <div class="card pe-3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h1><i class="bi bi-person"></i>
+                                <span class="h5 mb-3">
+                                    Personliche daten <i class="bi bi-info-circle-fill h6 ms-1"></i>
+                                </span>
+                            </h1>
+                        </h5>
+                        <h5 class="card-title mt-4">
+                            <span class="h5 my-3">
+                                Anschluss-, Liefer-und Rechnungsadresse
+                                <i class="bi bi-info-circle-fill ms-1 h6"></i>
+                            </span>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary mt-2">wien street 6</h6>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">1205 Budapest</h6>
+                        <form class="row g-3 border-top border-2 mt-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Anrede</label><span
+                                    class="text-danger h5">*</span>
+                                <input type="email" class="form-control border border-danger" id="inputEmail4"
+                                    value="something">
+                                <div class="text-danger">Invalid anrede!</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Titel</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label h6">Vorname</label><span
+                                    class="text-danger h5">*</span>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label h6">Nachname</label><span
+                                    class="text-danger h5">*</span>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label h6">Mobilfank number</label><span
+                                    class="text-danger h5">*</span>
+                                <input type="email" class="form-control" id="inputAddress" placeholder="0123456789">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label h6">Email address</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="something@somethig.com">
+                            </div>,
+
+
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque.</div>
+                            <h6>Date fields<span class="text-danger h5">*</span></h6>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-4">
+                                            <input type="text" class="form-control" id="day" placeholder="16">
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <input type="text" class="form-control" id="month" placeholder="08">
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <input type="text" class="form-control" id="year" placeholder="1951">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                            <div class="col-12 my-4 ms-1">
+                                <div class="form-check">
+                                    <input class="form-check-input bg-light" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Lorem ipsum dolor
+                                    </label>
+                                </div>
+                            </div>
+                            <h1 class="border-top border-2 pt-3">
+                                <i class="bi bi-coin"></i> <span class="h5">Personliche daten</span>
+                            </h1>
+                            <div class="col-12">
+                                <label for="iban" class="form-label h6">IBAN</label><span
+                                class="text-danger h5">*</span>
+                                <input type="text" class="form-control shadow p-1 mb-1" id="iban">
+                            </div>,
+                            <div class="form-check mt-3 ms-1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <h6>Kontoinhaber bin ich selbst <span><i
+                                                class="bi bi-info-circle-fill ms-1 h6"></i></span></h6>
+
+                                </label>
+                            </div>
+                            <div class="form-check ms-1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <p>Kontoinhaber ist eine andere Person</p>
+                                </label>
+                            </div>
+                            <h1 class="border-top border-2 pt-3">
+                                <i class="bi bi-calendar-date"></i> <span class="h5">Wunschtermin für Deine
+                                    Lieferung</span>
+                            </h1>
+                            <div class="form-check mt-3 ms-1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault3" checked>
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    <h6>So schnell wie möglich</h6>
+                                </label>
+                            </div>
+                            <div class="form-check ms-1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    <p>Ab einem bestimmten Datum</p>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-start border-top border-2 mt-3 pt-3" >
+                                <div class="mb-5">
+                                    <p>
+                                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Zurüczk</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end border-top border-2 mt-3 pt-3">
+                                <div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Weiter zu Angaben prüfen </button>
+                                    </div>
+                                    <div class="mt-2 d-flex justify-content-center">
+                                        <span><i class="bi bi-aspect-ratio me-2"></i></span> 14 Tage Widerrufsrecht 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="mb-4">
+                        <span class="text-danger h5">*</span>Pflichtfelder
+                    </div>
+                    <div class="mb-3">
+                        Alle Preise enthalten 19% Mehrwertsteuer
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title mt-3">Ihr neuer Tarif</h3>
+                        <div class="bg-light ">
+                            <div class="d-flex border-bottom border-2 mt-3 px-2 pt-2">
+                                <div class="h5">Monaltich</div>
+                            </div>
+                            <div class="d-flex justify-content-between my-2 px-2">
+                                <div>Lorem ipsum</div>
+                                <div>49,55 $</div>
+                            </div>
+                            <div class="d-flex justify-content-between my-2 px-2">
+                                <div>Lorem ipsum</div>
+                                <div>50 $</div>
+                            </div>
+                            <div class="d-flex justify-content-between my-2 px-2">
+                                <div>Lorem ipsum</div>
+                                <div class="h6">94,56 $</div>
+                            </div>
+                        </div>
+                        <div class="bg-light my-2">
+                            <div class="d-flex justify-content-between border-bottom border-2 mt-3 px-2 pt-2">
+                                <div class="h5">Einmaling</div>
+                            </div>
+                            <div class="d-flex justify-content-between my-2 px-2">
+                                <div>Lorem ipsum</div>
+                                <div>49,55 $</div>
+                            </div>
+                            <div class="d-flex justify-content-between my-2 px-2">
+                                <div>Lorem ipsum</div>
+                                <div class="h6">-49,55 $</div>
+                            </div>
+                        </div>
+                        <div class="bg-info mt-2">
+                            <div class="d-flex justify-content-between border-bottom border-2 mt-3 px-2 pt-2">
+                                <div class="h5 text-Success">Deine Vorteile</div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-1 px-2">
+                                <div class="mt-2 mb-3">WLAN Router</div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aaspernatur rerum:
+                </div>
+                <div>
+                    <li>
+                        Lorem ipsum 
+                    </li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="bg-light text-center mb-4 py-3 mt-auto border-bottom border-top">
+        <div class="container">
+            <div class="row bg-light">
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Über Vodafone</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Presse</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Wohnungswirtschaft NE/4</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Datenschutzhinweise</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Cookies</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">AGB</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Impressum</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Häufige Fragen</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Über Vodafone</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
