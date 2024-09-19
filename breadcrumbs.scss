@@ -1,3 +1,5 @@
+$activeBgColor: #494D4E;
+
 .breadcrumb-custom {
     .breadcrumb-item {
       position: relative;
@@ -10,20 +12,20 @@
   
       &:not(.last)::after {
         position: absolute;
-        top: 50%;
+        top: 0; 
         right: -25px;
         z-index: 1;
         display: inline-block;
         width: 50px;
-        height: 50px;
-        margin-top: -25px;
+        height: 100%; 
         content: "";
         background-color: var(--bs-tertiary-bg);
         border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem; 
         box-shadow: 1px -1px var(--bs-border-color);
-        transform: scale(.707) rotate(45deg);
+        transform: scale(1) rotate(45deg); 
       }
-
+  
       &.first {
         padding-left: 1.5rem;
       }
@@ -37,16 +39,16 @@
       }
   
       &.active {
-        background-color: #494D4E;
+        background-color: $activeBgColor;
         border-radius: 0.25rem;
   
         a {
           color: white !important;
-          background-color: #494D4E;
+          background-color: $activeBgColor;
         }
   
         &::after {
-          background-color: #494D4E;
+          background-color: $activeBgColor;
           box-shadow: none;
           border: none;
         }
