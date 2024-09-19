@@ -40,6 +40,8 @@
 }
 .breadcrumb-custom .breadcrumb-item.active::after {
   background-color: #494D4E;
+  box-shadow: none;
+  border: none;
 }
 
 /*# sourceMappingURL=breadcrumbs.css.map */
