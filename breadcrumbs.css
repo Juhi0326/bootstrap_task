@@ -11870,6 +11870,10 @@ textarea.form-control-lg {
 .breadcrumb-custom .breadcrumb-item.first {
   padding-left: 1.5rem;
 }
+.breadcrumb-custom .breadcrumb-item.first::after {
+  box-shadow: none;
+  border: none;
+}
 .breadcrumb-custom .breadcrumb-item.last {
   padding-right: 1.5rem;
 }
@@ -11888,6 +11892,21 @@ textarea.form-control-lg {
   background-color: #494D4E;
   box-shadow: none;
   border: none;
+}
+@media (max-width: 999px) {
+  .breadcrumb-custom .breadcrumb-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  .breadcrumb-custom .breadcrumb-item a {
+    text-align: center;
+  }
+  .breadcrumb-custom .breadcrumb-item::after {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=breadcrumbs.css.map */
