@@ -1,4 +1,5 @@
-$activeBgColor: #494D4E;
+@import "./node_modules/bootstrap/scss/bootstrap";
+
 
 .breadcrumb-custom {
     .breadcrumb-item {
@@ -39,16 +40,16 @@ $activeBgColor: #494D4E;
       }
   
       &.active {
-        background-color: $activeBgColor;
+        background-color: $secondary;
         border-radius: 0.25rem;
   
         a {
           color: white !important;
-          background-color: $activeBgColor;
+          background-color: $secondary;
         }
   
         &::after {
-          background-color: $activeBgColor;
+          background-color: $secondary;
           box-shadow: none;
           border: none;
         }
